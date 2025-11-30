@@ -1,26 +1,40 @@
-# Continuous Deployment using AWS Code Pipeline and S3
+# Continuous Deployment Using AWS CodePipeline and S3
 
-This repo contains the code files used in this [YouTube video](https://youtu.be/biYVW1TMYAU](https://youtu.be/iXXuv3ksYX4?si=GrQBoTRrrtvQkY7Y).
+This repository contains the code used in the related YouTube tutorial:
+[https://youtu.be/iXXuv3ksYX4?si=GrQBoTRrrtvQkY7Y](https://youtu.be/iXXuv3ksYX4?si=GrQBoTRrrtvQkY7Y)
 
-## TL;DR
-Code for a game is hosted in GitHub.  We create an S3 bucket for static website hosting, then create a continuous deployment pipeline (using AWS Code Pipeline) to automatically deploy the code whenever changes are made.
+A simple web-based game is hosted on GitHub. You’ll create an S3 bucket for static website hosting, then build a continuous deployment pipeline using AWS CodePipeline so that updates are automatically deployed whenever code changes are pushed to GitHub.
 
 ## The Game
-A simple memory matching game.  The user clicks two cards (images of memes) to try to match them.  If there's a match, the cards disappear from the board.  If there's no match, the cards are flipped back to their blank side so the user can try again.
 
-The game consists of HTML, CSS and JavaScript.
+This project is a simple memory-matching game. The user clicks two cards (meme images) to find matching pairs:
 
-Ideas for additional features:
-- A scoring mechanism
-- A timer
-- Add additional cards
-- Multi-player capabilities so you can compare scores 
+* If the cards match, they disappear from the game board.
+* If they do not match, they flip back over so the user can try again.
 
-## The Deployment Environment
-The code will be deployed and hosted in S3.
+The game is built with **HTML, CSS, and JavaScript**.
 
-## The Deployment Pipeline
-The pipeline is created using AWS Code Pipeline.  The pipeline pulls the code from GitHub, and deploys it to S3 whenever a change is detected in the code.
+### Ideas for Future Enhancements
+
+* Add a scoring system
+* Add a timer
+* Introduce more cards
+* Add multiplayer features to compare scores
+
+## Deployment Environment
+
+The game is hosted as a **static website on Amazon S3**.
+
+## Deployment Pipeline
+
+The CI/CD pipeline is created using **AWS CodePipeline**.
+It automatically:
+
+1. Pulls code from GitHub
+2. Detects changes
+3. Deploys updated files to the S3 bucket
 
 ## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
+
+All services used in this tutorial are eligible for the **AWS Free Tier**.
+However, charges may apply over time, so it is recommended to delete or shut down resources once you finish the tutorial.
