@@ -3,7 +3,7 @@
 This repository contains the code used in the related YouTube tutorial:
 [https://youtu.be/iXXuv3ksYX4?si=GrQBoTRrrtvQkY7Y](https://youtu.be/iXXuv3ksYX4?si=GrQBoTRrrtvQkY7Y)
 
-![Uploading image.png…]()
+<img width="2880" height="1531" alt="image" src="https://github.com/user-attachments/assets/0e0cbb49-a15d-44f0-8104-c1ffc5d15fbc" />
 
 A simple web-based game is hosted on GitHub. You’ll create an S3 bucket for static website hosting, then build a continuous deployment pipeline using AWS CodePipeline so that updates are automatically deployed whenever code changes are pushed to GitHub.
 
